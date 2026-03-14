@@ -1,0 +1,36 @@
+* {
+    scroll-behavior: smooth;
+}
+
+#page-wrapper {
+    margin: 0 0 0 30vh;
+}
+
+.navbar-static-side {
+    width: 30vh;
+}
+
+body.fixed-nav.fixed-nav-basic.fixed-sidebar.mini-navbar.body-small .navbar-fixed-top {
+    left: 30vh;
+}
+
+.profile-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown span {
+    text-align: center;
+    margin-left: 0;
+    margin-top: .5em;
+}
+
+#container_pie_chart rect {
+    fill: none;
+}
+
+.nav-second-level li:last-child {
+    padding-bottom: 0;
+}

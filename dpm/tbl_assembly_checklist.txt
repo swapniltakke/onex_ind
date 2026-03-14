@@ -1,0 +1,25 @@
+USE [spectra]
+GO
+
+/****** Object:  Table [dbo].[tbl_assembly_checklist1]    Script Date: 27-03-2022 2.38.21 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_assembly_checklist](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[sr_no] [varchar](200) NULL,
+	[current_station] [varchar](200) NULL,
+	[activity] [varchar](Max) NULL,
+	[chk_box] [nchar](1) NULL,
+	[text_req] [varchar](200) NULL,
+	[product] [varchar](200) NULL,
+	[new_station_no] [varchar](200) NULL,
+ CONSTRAINT [PK_tbl_assembly_checklist] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO

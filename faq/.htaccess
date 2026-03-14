@@ -1,0 +1,8 @@
+RewriteEngine On
+
+<If "%{HTTP_HOST} == 'test.onex.siemens.com.tr'">
+    php_value auto_prepend_file none
+</If>
+<Else>
+    php_value auto_prepend_file none
+</Else>

@@ -1,0 +1,34 @@
+    .laser {
+        width: 43vh;
+        height: 20vh;
+        margin-left: -5vh;
+        margin-top: -31vh;
+        background-color: tomato;
+        height: 1px;
+        position: absolute;
+        /* top: 0%; */
+        z-index: 2;
+        box-shadow: 0 0 4px red;
+        animation: scanning 2s infinite;
+    }
+
+    .diode {
+        animation: beam .01s infinite;
+    }
+
+    @keyframes beam {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes scanning {
+        50% {
+            transform: translateY(30vh);
+        }
+    }
+
+    .card{
+        max-width: 20px!important;
+        max-height: 20px!important;
+    }

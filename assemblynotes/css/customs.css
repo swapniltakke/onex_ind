@@ -1,0 +1,90 @@
+.mt-0{margin-top: 0 !important;}
+.mt-1r{margin-top: 1rem !important;}
+.mt-2r{margin-top: 2rem !important;}
+.mt-3r{margin-top: 3rem !important;}
+.mt-4r{margin-top: 4rem !important;}
+.mt-5r{margin-top: 5rem !important;}
+
+.mb-0{margin-bottom: 0 !important;}
+.mb-1r{margin-bottom: 1rem !important;}
+.mb-2r{margin-bottom: 2rem !important;}
+.mb-3r{margin-bottom: 3rem !important;}
+.mb-4r{margin-bottom: 4rem !important;}
+.mb-5r{margin-bottom: 5rem !important;}
+
+.pt-0{padding-top: 0 !important;}
+.pt-2r{padding-top: 2rem !important;}
+.pt-3r{padding-top: 3rem !important;}
+.pt-4r{padding-top: 4rem !important;}
+.pt-5r{padding-top: 5rem !important;}
+
+.pb-0{padding-bottom: 0 !important;}
+.pb-2r{padding-bottom: 2rem !important;}
+.pb-3r{padding-bottom: 3rem !important;}
+.pb-4r{padding-bottom: 4rem !important;}
+.pb-5r{padding-bottom: 5rem !important;}
+
+
+.ta-c{text-align: center !important;}
+.ta-r{text-align: right !important;}
+.ta-l{text-align: left !important;}
+
+.df{display: flex !important;}
+
+.jcc{justify-content: center !important;}
+
+.scrollable-table {
+    display: block;
+    max-height: 61vh;
+    overflow-y: scroll;
+    min-width: 1255px !important;
+}
+
+.scrollable-thead, .scrollable-tbody-tr {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#table_open_items_wrapper > .dt-buttons{
+    float: right;
+}
+
+#table_open_items_filter {
+    float: unset;
+}
+
+#table_open_items_filter > label > input{
+    width: 300px;
+}
+
+table.dataTable.table thead th.sorting{
+    padding-right: .7em !important;
+}
+
+.scrollable-thead > tr > th{
+    text-align: center !important;
+}
+
+#insertModal > .select2-container{
+    z-index: 99999;
+}
+
+.hasMultiSelect{
+    display: grid !important;
+}
+.hasMultiSelect > span.select2-container{
+    width: 240px !important;
+    display: block;
+    margin: auto;
+}
+
+.dd-handle{
+    box-shadow: 0 1px 1px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin: 10px 0;
+}
+
+@media screen and ( min-height: 768px ) {
+    .scrollable-table{
+        max-height: 68vh;
+    }
+}

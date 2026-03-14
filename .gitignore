@@ -1,0 +1,10 @@
+/.idea/**
+vendor
+/users/pics/*
+/dpm/document/files/*
+.env
+.history
+/dpm/dwc/uploads/*
+/.zip/*
+/.iso/*
+/.rar/*

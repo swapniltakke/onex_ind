@@ -1,0 +1,39 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+<FilesMatch ".(eot|ttf|otf|woff|woff2)">
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+ErrorDocument 404 /shared/screens/404NotFound.php
+<FilesMatch "\.(html|php|js|css|jpg|jpeg|png|htm)$">
+Header set Content-Security-Policy "img-src * data:;"
+Header always unset X-Frame-Options
+Header set X-Frame-Options "SAMEORIGIN"
+</FilesMatch>
+
+#Make .env files inaccessible from url
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+#Serve gzip compressed CSS files if they exist and the client accepts gzip.
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}\.gz -s
+RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+#Serve gzip compressed JS files if they exist and the client accepts gzip.
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}\.gz -s
+RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+#Serve correct content types, and prevent mod_deflate double gzip.
+RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=is_gzip:1]
+RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1,E=is_gzip:1]
+Header set Content-Encoding "gzip" env=is_gzip
+
+php_value auto_prepend_file onex-ind/checklogin.php
+
+php_value memory_limit 128M

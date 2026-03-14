@@ -1,0 +1,32 @@
+.blinking-red {
+  animation: 3s blink-red ease infinite;
+width: 20px;
+height: 20px;
+border-radius: 100%
+}
+.blinking-green {
+  animation: 3s blink-green ease infinite;
+width: 20px;
+height: 20px;
+border-radius: 100%
+}
+@-webkit-keyframes "blink-green" {
+from, to {
+  opacity: 0;
+  background-color: #728840;
+}
+50% {
+  opacity: 1;
+}
+}
+
+
+@-webkit-keyframes "blink-red" {
+from, to {
+  opacity: 0;
+  background-color: #7C0000;
+}
+50% {
+  opacity: 1;
+}
+}

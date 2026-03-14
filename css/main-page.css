@@ -1,0 +1,142 @@
+.onex-header {
+    margin-bottom: 22px !important;
+    color: teal;
+    background: #031534 !important;
+    border-bottom: 1px solid #a2a2a257 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 80px;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-left-logo {
+        display: none !important;
+    }
+
+    .header-right-profile {
+        display: none !important;
+    }
+
+    .onex-header {
+        justify-content: center;
+    }
+
+    .header-center {
+        margin-right: 0 !important;
+    }
+}
+
+.header-left-logo {
+    margin-left: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center {
+    margin-right: -75px;
+}
+
+.header-right-profile {
+    margin-right: 13px;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ui.black.label {
+    background-color: #58ffc9 !important;
+    color: #1b1c1d !important;
+}
+
+.description {
+    color: #FFFFFF !important;
+}
+
+.ui.attached.segment {
+    border: none !important;
+}
+
+.ui.inverted.grey.segment {
+    background: rgb(26 149 153) !important;
+}
+
+.logoutAnchors{
+    color: #e4e4e4 !important;
+    padding-top: 3px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    width: -webkit-fill-available;
+}
+
+.arrowDropdowns{
+    width: 165px;
+    height: 41px;
+    position: absolute;
+    background-color: #001537 !important;
+    border-radius: 3px;
+    z-index: 999;
+    box-shadow: inset 0px 0px 0px 1px #19b6d3;
+    display: flex;
+    padding-top: 7px;
+    align-items: stretch;
+    padding-left: 10px;
+}
+
+.ui.grid > .row > .column {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    margin: 9px !important;
+    margin-top: 0px !important;
+    width: 23% !important;
+    min-height: 212.66px !important;
+}
+
+.ui.grid > .row > .column:hover {
+    background: #009999bf !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ui[class*="four column"].doubling.grid > .row > .column {
+        width: 40% !important;
+        margin-bottom: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ui[class*="four column"].doubling:not(.stackable).grid > .row > .column {
+        width: 40% !important;
+        margin: 0 9px 16px 9px !important;
+    }
+}
+
+.column:hover {
+    opacity: 1 !important;
+    /* css standard */
+    filter: alpha(opacity=100);
+    /* internet explorer */
+}
+
+.description {
+    padding-top: 6px !important;
+}
+
+body {
+    background: linear-gradient(180deg, #000028 0%, #009999 100%) fixed;
+}
+
+.fil0 {
+    fill: #009999
+}

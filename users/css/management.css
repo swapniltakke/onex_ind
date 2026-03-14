@@ -1,0 +1,82 @@
+.ta-c{ text-align: center !important;}
+.va-m{ vertical-align: middle !important; }
+.p-0{ padding: 0 !important; }
+.w-1{width: 1% !important;}
+.w-2{width: 2% !important;}
+.w-3{width: 3% !important;}
+.w-4{width: 4% !important;}
+.w-5{width: 5% !important;}
+.w-6{width: 6% !important;}
+.w-7{width: 7% !important;}
+.w-8{width: 8% !important;}
+.w-9{width: 9% !important;}
+.w-10{width: 10% !important;}
+.w-11{width: 11% !important;}
+.w-12{width: 12% !important;}
+.w-13{width: 13% !important;}
+.w-14{width: 14% !important;}
+.w-15{width: 15% !important;}
+
+#usersTable_wrapper {
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+    position: relative !important;
+}
+
+#usersTable_filter{
+    position: fixed;
+    right: 35px;
+    top: 115px;
+}
+
+#usersTable {
+    width: auto !important;
+}
+
+.scrollable-col{
+    min-width: 20px;
+}
+
+.buttonsCol{
+    position: sticky !important;
+    left: 0px;
+    z-index: 9;
+}
+
+.static-cell-bg{
+    background: rgb(193, 224, 252) !important;
+}
+
+.idCol{
+    position: sticky !important;
+    left: 123.33px;
+    background-color: #ddd;
+    z-index: 9;
+}
+
+.emailCol{
+    position: sticky !important;
+    left: 146.76px;
+    z-index: 9;
+}
+
+.rotate{
+    writing-mode: vertical-rl;
+    word-break: break-word;
+    height: 15% !important;
+    text-align: center;
+}
+
+#usersTable > thead > tr > th {
+    border-bottom: 1px solid #DDDDDD;
+    background-color: #F5F5F6 !important;
+}
+
+#usersTable_filter input{
+    outline: unset;
+}
+
+#tableContainer{
+    padding-top: 3rem !important;
+}

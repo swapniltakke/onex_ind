@@ -1,0 +1,36 @@
+.ui input {
+    font-size: 0.9rem;
+}
+
+.search-field input {
+    width: 200px !important;
+    color: rgb(224, 225, 226) !important;
+}
+
+.input-daterange input {
+    text-align: left;
+}
+
+.rangeDropdown ~ .chosen-container {
+    width: 150px !important;
+}
+
+.chosen-search input {
+    outline: none;
+}
+
+#example_wrapper .row .col-sm-12 {
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 10px;
+}
+
+#example_wrapper .row .col-md-6 {
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 10px;
+}
+
+#example th {
+    background-repeat: no-repeat;
+}

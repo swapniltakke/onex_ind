@@ -1,0 +1,144 @@
+.dataTables_filter input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.285714rem;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.87);
+    -ms-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0;
+    max-width: 100%;
+    outline: 0 none;
+    padding: 0.4em;
+    text-align: left;
+    -moz-transition: background-color 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s;
+    -o-transition: background-color 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s;
+    -webkit-transition: background-color 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s;
+    transition: background-color 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    text-align: right;
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-flex;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+#ordersInPlanDatatable_wrapper{
+    background: #f1f4f5;
+    min-height: 70vh;
+}
+
+#translator-breadcrumb{
+    top: 5% !important;
+}
+
+.shrink {
+    margin-left: 10em;
+}
+
+.extend {
+    margin-left: 40%;
+}
+
+#logo:hover {
+    background-color: white;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    height: 2em !important;
+}
+
+.align-right {
+    text-align: right;
+    max-width: 80px;
+}
+
+.align-left {
+    text-align: left;
+    max-width: 80px;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+body {
+    -moz-transform: scale(0.95, 0.95); /* Moz-browsers */
+    zoom: 0.95; /* Other non-webkit browsers */
+    zoom: 95%; /* Webkit browsers */
+}
+
+.red {
+    background-color: #ee3131 !important;
+}
+
+.orange {
+    background-color: #FFA500 !important;
+}
+
+.green {
+    background-color: #21ba45 !important;
+}
+
+.open.button {
+    cursor: pointer;
+}
+
+td.details-control {
+    background: url('https://onex.siemens.com.tr/images/plus15.svg') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('https://onex.siemens.com.tr/images/minus15.svg') no-repeat center center;
+}
+
+.clicked {
+    background-color: #FCD34D;
+    font-weight: bolder;
+}
+
+#loading {
+    /*background: url(images/ajax-loader.gif) no-repeat center center;*/
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+}
+
+/* Very compact table */
+.ui[class*="very-compact"].table th {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+.ui[class*="very-compact"].table td {
+    padding: 0.6em 0.6em;
+}
+
+.ui.table thead th {
+    text-align: center !important;
+}
+
+.ui.table tr[class*="inner-row"] {
+    text-align: center !important;
+}
+
+.ui.table tr[class*="inner-row2"] {
+    text-align: center !important;
+}
+
+i.hamburger.icon {
+    margin-top: -45px;
+}
+
+.dt-buttons {
+    display: flex;
+    margin-top: 2em !important;
+}

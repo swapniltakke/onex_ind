@@ -1,0 +1,7 @@
+RewriteEngine on
+
+<FilesMatch "composer">
+    Require all denied
+</FilesMatch>
+
+php_value auto_prepend_file none

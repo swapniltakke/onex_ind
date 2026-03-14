@@ -1,0 +1,21 @@
+#translator-breadcrumb{
+    position:fixed;
+    top:2%;
+    left:1%;
+    display:flex;
+    column-gap: 0.5rem;
+    flex-direction: row;
+    z-index: 999;
+}
+#translator-breadcrumb div{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: opacity(30%);
+}
+#translator-breadcrumb div.active{
+    filter: unset !important;
+}
+#translator-breadcrumb div svg{
+    border-radius: 1rem;
+}

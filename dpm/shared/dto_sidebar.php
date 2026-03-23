@@ -10,7 +10,7 @@
     $currentPath = $_SERVER['PHP_SELF'];
     
     // Check if we're on project_detail.php and set configurator mode
-    if ($currentPage === 'project_detail.php') {
+    if ($currentPage === 'project_detail.php' || $currentPage === 'index.php') {
         $isConfigurator = true;
         $mode = 'configurator';
     }
@@ -166,14 +166,14 @@
                     $projectCollapseClass = $isProjectActive ? 'in' : '';
                 ?>
                 <li class="<?php echo $projectActiveClass; ?>">
-                    <a href="/dpm/dto_configurator/projects/index.php?mode=configurator" aria-expanded="<?php echo $projectExpandedAria; ?>">
+                    <a href="/dpm/dtoconfigurator/core/projects/index.php?mode=configurator" aria-expanded="<?php echo $projectExpandedAria; ?>">
                         <i class="fa fa-list"></i>
                         <span class="nav-label" data-translate="all-notes">Projects</span>
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level collapse <?php echo $projectCollapseClass; ?>" aria-expanded="<?php echo $projectExpandedAria; ?>">
                         <li class="<?php echo $isProjectActive ? 'active' : ''; ?>">
-                            <a href="/dpm/dto_configurator/projects/index.php?mode=configurator" class="<?php echo $isProjectActive ? 'active' : ''; ?>">
+                            <a href="/dpm/dtoconfigurator/core/projects/index.php?mode=configurator" class="<?php echo $isProjectActive ? 'active' : ''; ?>">
                                 <i class="fa fa-info-circle"></i>
                                 <span class="nav-label" data-translate="all-notes">Project Information</span>
                             </a>

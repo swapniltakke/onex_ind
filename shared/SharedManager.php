@@ -6,6 +6,24 @@ error_reporting(E_ERROR | E_PARSE);
 
 class SharedManager
 {
+    public static $user_os = "";
+    public static $user_browser = "";
+    public static $user_ip = "";
+    public static $email = "";
+    public static $whom = null;
+    public static $gid = "";
+    public static $name = "";
+    public static $surname = "";
+    public static $fullname = "";
+    public static $nativeName = "";
+    public static $modulesStr = "";
+    public static $functionsStr = "";
+    public static $userGroupId = 0;
+    public static $isSupplier = 0;
+    public static $userOrgCode = "";
+    public static $registryNo = "";
+    public static $hostUrl = "";
+    
     public static function getUserIP()
     {
         $ip = $_SERVER["HTTP_CLIENT_IP"] ??
@@ -17,6 +35,16 @@ class SharedManager
         if (strpos($ip, ',') > 0)
             $ip = substr($ip, 0, strpos($ip, ','));
         return $ip;
+    }
+
+    public static function setUserPermissions($newAccessToken = null)
+    {
+        $payload = self::getAccessTokenPayload($newAccessToken);
+        self::$modulesStr = $payload->modulesStr;
+        self::$functionsStr = $payload->functionsStr;
+        self::$userGroupId = $payload->group_id;
+        self::$userOrgCode = $payload->org_code;
+        self::$isSupplier = $payload->is_supplier;
     }
 
     public static function getFromSharedEnv($keyword){

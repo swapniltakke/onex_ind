@@ -522,3 +522,25 @@ function getOneXMailContent($bodyContent = "", $headerContent = ""): string
 
     return $body;
 }
+
+function getSanitizedOrDefaultData($data, $defaultData = null) {
+    if ($data === null) {
+        return $defaultData;
+    }
+
+    switch (gettype($data)) {
+        case 'string':
+            $cleaned_data = htmlspecialchars(trim($data), ENT_QUOTES, 'UTF-8');
+            return $cleaned_data !== '' ? $cleaned_data : $defaultData;
+        case 'array':
+            return array_map(fn($item) => getSanitizedOrDefaultData($item, $defaultData), $data);
+        case 'integer':
+            return filter_var($data, FILTER_SANITIZE_NUMBER_INT);
+        case 'double': // float data returns as "double"
+            return filter_var($data, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+        case 'boolean':
+            return filter_var($data, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
+        default:
+            return $data;
+    }
+}

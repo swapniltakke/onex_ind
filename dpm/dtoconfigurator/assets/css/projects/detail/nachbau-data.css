@@ -1,0 +1,102 @@
+#nachbauList div {
+    width:20rem!important;
+}
+
+#nachbauDataContainer .ui.vertical.menu {
+    max-height:405px;
+    overflow-y: auto; /* Add vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.ui.vertical.menu.scroller::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ui.vertical.menu.scroller::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.ui.vertical.menu.scroller::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.collapsed .menu .item:not(.active) {
+    display: none !important; /* Hide non-active items when collapsed */
+}
+
+#toggleCollapseButton {
+    margin-bottom:0.6rem;
+    display:none!important;
+}
+
+#toggleCollapseButton i {
+    margin:0!important;
+    padding-bottom: 0.6rem!important;
+}
+
+.group {
+    border: 1px solid transparent;
+    padding: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.group.hovered {
+    background-color: #f0f8ff; /* Light blue */
+    border-color: #1e90ff; /* Dodger blue */
+}
+
+.sub-list .sub-item-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.sub-list .sub-item-row div {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.nachbau-no-filter-item:before {
+    position: absolute!important;
+    content: ''!important;
+    top: 0!important;
+    left: 0!important;
+    width: 0!important;
+    height: 1px!important;
+    background: rgba(34, 36, 38, .1)!important;
+}
+
+.nachbau-no-filters {
+    position: relative;
+    z-index: 1;
+    overflow: auto !important;
+    width:0!important;
+}
+
+.ui.popup {
+    z-index: 9999 !important; /* high enough to appear above menu */
+}
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 1550px) {
+
+    #nachbauData #listType .ui.menu {
+        width:13rem!important;
+    }
+    #nachbauData #typicalAndPanels .ui.menu{
+        width:17rem!important;
+    }
+    #nachbauData #dtoNumbers .ui.menu{
+        width:35rem!important;
+    }
+    #nachbauData #dtoDescription .ui.menu{
+        width:19rem!important;
+    }
+}
+

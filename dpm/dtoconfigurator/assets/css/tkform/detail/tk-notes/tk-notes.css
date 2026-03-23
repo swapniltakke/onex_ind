@@ -1,0 +1,11 @@
+#tkNoteItemList .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#deleteTkNoteContent p {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,93 @@
+.checklist-title-labels {
+    font-weight: 600!important;
+    color: #2c3e50!important;
+    font-size: 15px!important;
+}
+
+.checklist-dropdowns {
+    border-radius: 8px!important;
+    border: 2px solid #e1e8ed!important;
+}
+
+#add-checklist-form .fields {
+    margin-bottom:20px;
+}
+
+#add-checklist-form .field {
+    margin-bottom:20px;
+}
+
+
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+.dt-search label {
+    display:none;
+}
+
+
+#checklistTable thead th {
+    background-color: aliceblue;
+}
+
+#checklistTable {
+    font-size: 12px;
+}
+
+#checklistTable th {
+    padding: 5px 6px !important;
+    vertical-align: middle;
+}
+#checklistTable td {
+    padding: 20px 6px !important;
+    vertical-align: middle;
+}
+
+#checklistTable td:nth-child(1),
+#checklistTable th:nth-child(1) {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#checklistTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    #checklistTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #checklistTable {
+        min-width: 1100px;
+    }
+}
+
+#checklistTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+#checklistTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+#checklistTable td:first-child {
+    word-wrap: break-word;
+    white-space: normal !important;
+}

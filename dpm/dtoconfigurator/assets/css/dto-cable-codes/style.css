@@ -1,0 +1,155 @@
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+.dt-search label {
+    display:none;
+}
+
+#cthTable_wrapper div.dt-container select.dt-input  {
+    border-radius:50px!important;
+}
+.ui.segment {
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(34, 36, 38, 0.12);
+}
+
+.ui.dividing.header {
+    margin-bottom: 1.5rem !important;
+}
+
+.ui.segment h4.ui.header {
+    color: #1b1c1d;
+    font-weight: 600;
+}
+
+.ui.segment h4.ui.header i.icon {
+    margin-right: 0.5rem;
+}
+
+.ral-color-dropdown .menu .item {
+    display: flex !important;
+    align-items: center;
+    padding: 8px 12px !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    margin: 1px 0 !important;
+}
+
+.ral-color-dropdown .menu .item:hover {
+    opacity: 0.8 !important;
+}
+
+.ral-color-dropdown .menu .item.selected,
+.ral-color-dropdown .menu .item.active {
+    border: 2px solid #000 !important;
+    font-weight: bold !important;
+}
+
+.ral-color-dropdown .menu .item .color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 10px;
+    border: 1px solid #000 !important;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.ral-color-dropdown .text .color-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 8px;
+    border: 1px solid #000 !important;
+    display: inline-block;
+}
+
+.cableTable thead tr th {
+    background-color: aliceblue!important;
+}
+
+.cableTable {
+    font-size: 0.8rem!important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.cableTable .dt-column-order {
+    display:none;
+}
+
+/* Default cell styling */
+.cableTable td,
+.cableTable th {
+    padding: 5px 6px !important;
+    vertical-align: middle;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+/* UPDATED: Important columns that should show full text */
+.cableTable td.important-text,
+.cableTable th.important-text {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.2 !important;
+    max-height: none !important;
+}
+
+/* Wrap-text columns (for long descriptions) */
+.cableTable td.wrap-text,
+.cableTable th.wrap-text {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    line-height: 1.2 !important;
+    max-height: none !important;
+}
+
+/* Color cells should remain compact */
+.cableTable td.color-cell {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: clip !important;
+}
+
+.cableTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    .cableTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cableTable {
+        min-width: 1100px;
+    }
+}
+
+.cableTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+.cableTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

@@ -1,0 +1,119 @@
+#orderSummaryActionButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:15px;
+}
+
+.dtFilteringRow {
+    margin-top:2.8rem!important;
+    display: flex;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+/*#dtFilteringSection{*/
+/*    margin-bottom: 1.2rem;*/
+/*}*/
+
+
+#addedMaterialField label, #deletedMaterialField label {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#transferButton {
+    width: 100%;
+    height: 60px;
+}
+
+/* Highlight selected items */
+#itemList .active {
+    background-color: lightblue!important;
+}
+
+/* Highlight transferred items */
+#selectedItems .panel-list .item {
+    background-color: greenyellow!important;
+}
+
+#selectedItems .panel-list .item.active {
+    background-color: lightblue!important;
+}
+
+#orderSummaryTabledto_numberFilter {
+    max-width:630px;
+    width:630px;
+}
+
+#spare-wda-quantity-input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60px;
+}
+
+#spareWdaNoteDiv {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+#moveMaterialDiv {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+#available-materials a.active {
+    background-color: khaki!important;
+}
+
+#selected-materials a.active {
+    background-color: khaki!important;
+}
+
+
+#dtFilteringSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#clearFiltersButton {
+    margin-left: auto; /* Pushes the button to the right */
+}
+
+
+/*FIXING HEADERS*/
+
+#orderSummaryContainer #dtFilteringSection {
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+    background-color: white;
+}
+
+#orderSummaryTable_wrapper .ui.stackable.grid > .row:first-child {
+    position: sticky;
+    top: 166px;
+    z-index: 998;
+    background-color: white;
+}
+
+#orderSummaryTable thead {
+    position: sticky;
+    top: 233px;
+    z-index: 998;
+    background-color: white;
+}
+
+#orderSummaryTable thead th {
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

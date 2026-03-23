@@ -1,0 +1,83 @@
+.user-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+.user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+.dt-search label {
+    display:none;
+}
+
+#releasedProjectsTable thead th {
+     background-color: aliceblue;
+}
+
+#releasedProjectsTable {
+    font-size: 12px;
+}
+
+#releasedProjectsTable td,
+#releasedProjectsTable th {
+    padding: 5px 6px !important;
+    vertical-align: middle;
+}
+
+
+#releasedProjectsTable td:nth-child(1),
+#releasedProjectsTable th:nth-child(1) {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#releasedProjectsTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    #releasedProjectsTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #releasedProjectsTable {
+        min-width: 1100px;
+    }
+}
+
+#releasedProjectsTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+#releasedProjectsTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

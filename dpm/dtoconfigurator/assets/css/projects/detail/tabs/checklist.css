@@ -1,0 +1,50 @@
+
+#projectChecklistTable thead th {
+    background-color: aliceblue;
+}
+
+#projectChecklistTable {
+    font-size: 13px;
+}
+
+#projectChecklistTable th {
+    padding: 5px 6px !important;
+    vertical-align: middle;
+}
+
+#projectChecklistTable td {
+    padding: 20px 6px !important;
+    vertical-align: middle;
+}
+
+
+#projectChecklistTable td:nth-child(1),
+#projectChecklistTable th:nth-child(1) {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#projectChecklistTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    #projectChecklistTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #projectChecklistTable {
+        min-width: 1100px;
+    }
+}
+
+#projectChecklistTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+#projectChecklistTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

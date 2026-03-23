@@ -1,0 +1,10 @@
+#tkformInfoForm {
+    margin-top:20px;
+    margin-right:5%;
+}
+
+#tkInfoActionButtons {
+    display:flex;
+    justify-content:space-between;
+    margin-top: 2rem;
+}

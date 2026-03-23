@@ -1,0 +1,14 @@
+#jtCollectionInfo {
+    margin:0 auto;
+    margin-bottom:1.5rem!important;
+    width:55%;
+    text-align:center;
+}
+
+#jtCollectionCards .card {
+    background-color: #fafafa;
+}
+
+.first-typical-card {
+    background-color:aliceblue!important;
+}

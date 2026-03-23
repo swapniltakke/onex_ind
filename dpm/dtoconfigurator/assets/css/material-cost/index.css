@@ -1,0 +1,94 @@
+#materialCostListTable_wrapper .dt-length {
+    display: none !important;
+}
+
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 20px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.dt-search input[type="search"]:focus {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dt-search input[type="search"]::placeholder {
+    color: #999 !important;
+}
+
+.dt-search label {
+    display: none;
+}
+
+/* Multiple dropdown customization */
+#materialCostSearch.ui.dropdown > .label {
+    margin: 0.14285714em 0.28571429em 0.14285714em 0em !important;
+}
+
+.materialCostContainer .ui.multiple.dropdown > .label {
+    background-color: #00b5ad !important;
+    color: white !important;
+}
+
+.line-height-15 {
+    line-height: 1.5rem;
+}
+
+/* Table styling */
+#materialCostListTable tbody tr td {
+    font-size: 14px;
+}
+
+#materialCostListTable tbody tr td b {
+    color: #00b5ad;
+}
+
+/* Cost columns - daha belirgin */
+#materialCostListTable tbody tr td.cost-column {
+    background-color: #f0fdf4 !important;
+    font-weight: 600;
+    color: green;
+}
+
+#materialCostListTable tbody tr td.cost-column b {
+    font-size: 15px;
+    color: #059669;
+}
+
+#materialCostListTable tbody tr[style*="background-color: rgb(254, 226, 226)"] td.cost-column {
+    background-color: #fee2e2 !important;
+}
+
+#materialCostListTable {
+    font-size: 13px;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+#materialCostListTable thead th {
+    background-color: #f3f3f0 !important;
+}
+
+/* Footer Grand Total Styling */
+#materialCostListTable tfoot tr {
+    background-color: #e0f2f1 !important;
+    border-top: 3px solid #059669 !important;
+}
+
+#materialCostListTable tfoot th {
+    padding: 15px 10px !important;
+    font-size: 14px !important;
+    color: #059669 !important;
+    background-color: #e0f2f1 !important;
+}
+
+#materialCostListTable tfoot th:first-child {
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: #047857 !important;
+}

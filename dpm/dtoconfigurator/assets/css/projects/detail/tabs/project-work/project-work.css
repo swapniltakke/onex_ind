@@ -1,0 +1,273 @@
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+
+.dt-search label {
+    display:none!important;
+}
+
+
+/*  Search All customization */
+#projectWorkTableSearch input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+#projectWorkTableSearch input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+#projectWorkTableSearch input[type="search"]::placeholder {
+    color: #999!important;
+}
+
+#projectWorkTableSearch label {
+    display:none!important;
+}
+
+#projectWorkTableContent .ui.segment.container-fluid {
+    background-color:#f9f9f9;
+}
+
+#notDefinedWorkCenterDataTable .ui.search.dropdown {
+    padding-top:0!important;
+    padding-bottom:0!important;
+}
+
+#workListDataTable .ui.dropdown {
+    padding-top:0!important;
+    padding-bottom:0!important;
+}
+
+.work-center-dropdown {
+    width: 85% !important;
+}
+
+.sub-work-center-dropdown {
+    width: 85%!important;
+}
+
+.work-center-dropdown .text {
+    margin-top:0.9rem!important;
+}
+
+.sub-work-center-dropdown .text {
+    margin-top:0.9rem!important;
+}
+
+.type-number-select {
+    width: 90% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;  /* Ensures wrapping */
+    align-items: center !important;  /* Vertical alignment */
+    margin-bottom:0.5rem!important;
+}
+
+.type-number-select .ui.label {
+    flex: 0 1 auto;  /* Ensures items don't stretch the container */
+    font-size: 0.9rem !important;
+    padding-top: 0.5rem !important;
+}
+
+.type-number-select > .dropdown.icon {
+    display:none!important;
+}
+
+.added-items {
+    margin-bottom:0.5rem!important;
+}
+
+#extensionDtoListDataTable thead tr {
+    text-align:center!important;
+}
+
+#extensionDtoListDataTable tbody tr {
+    text-align:center!important;
+}
+
+#extension-table thead tr {
+    text-align:center!important;
+}
+
+#extension-table tbody tr {
+    text-align:center!important;
+}
+
+#extensionDtoKmatListDataTable thead tr {
+    text-align:center!important;
+}
+
+#extensionDtoKmatListDataTable tbody tr {
+    text-align:center!important;
+}
+
+.added-acc-material-select {
+    width:75% !important;
+}
+
+.extension-modal-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.clickable-cell:hover {
+    cursor:pointer;
+    background: #eee;
+}
+
+.clear-selected {
+    color:white;
+    background:red;
+}
+
+
+.added-kmat-material-select-div {
+    display: flex;
+    justify-content: center!important;
+}
+
+.added-kmat-material-select {
+    display: flex!important;
+    width:85%!important;
+    align-items: center!important;
+    padding:0!important;
+    padding-left: 15px!important;
+}
+
+.added-kmat-material-select input.search {
+    width: 80% !important;
+}
+
+.added-kmat-material-select input.text {
+    width: 95% !important;
+}
+
+.hide-important {
+    display:none!important;
+}
+
+#workListDataTable thead {
+    position: sticky;
+    top: 61px;
+    z-index: 998;
+    background-color: white;
+}
+
+#notDefinedWorkCenterDataTable thead {
+    position: sticky;
+    top: 61px;
+    z-index: 998;
+    background-color: white;
+}
+
+#notFoundNachbauDataTable thead {
+    position: sticky;
+    top: 61px;
+    z-index: 998;
+    background-color: white;
+}
+
+.extension-acc-panel-name {
+    font-size: 1.5rem;
+    color: darkblue;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.extension-acc-panel-name:hover {
+    color: royalblue;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#nachbau-lists-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure it takes full height */
+}
+
+#minusPriceNachbauListTabModalContent {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable scrolling for content */
+    padding-bottom: 60px; /* Avoid overlap with the footer */
+}
+
+
+/*INTERCHANGE DTOS*/
+/* INTERCHANGE DTOS */
+#chooseInterchangeDtoWorkModal .dto-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    gap: 10px; /* Adjust spacing between elements */
+}
+
+#chooseInterchangeDtoWorkModal .dto-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+#chooseInterchangeDtoWorkModal .dto-description {
+    font-size: 1em;
+    color: #333;
+    margin-top:11px;
+    white-space: nowrap; /* Prevents the description from wrapping */
+}
+
+#chooseInterchangeDtoWorkModal .typical-list {
+    color: #2185d0; /* Semantic UI blue */
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center; /* Centers typical numbers */
+}
+
+#chooseInterchangeDtoWorkModal .ui.segment {
+    padding: 15px;
+    background: aliceblue;
+    border-radius: 5px;
+}
+
+#chooseInterchangeDtoWorkModal .ui.form .field {
+    display: flex;
+    justify-content: center; /* Centers radio button, DTO number, and description */
+    align-items: center;
+}
+
+#chooseInterchangeDtoWorkModal .ui.radio.checkbox input {
+    margin-right: 10px;
+}
+
+.tkform-corner {
+    width: 0;
+    height: 0;
+    border-top: 15px solid #f9d423;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -40px;
+    right: -9px;
+    cursor: pointer;
+}
+.tkform-corner:hover {
+    opacity: 0.8;
+}
+
+[data-tooltip]::after {
+    z-index: 1001 !important;
+}

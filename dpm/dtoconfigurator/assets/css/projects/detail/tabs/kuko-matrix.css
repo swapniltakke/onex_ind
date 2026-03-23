@@ -1,0 +1,47 @@
+.cell-painted {
+    background-color: #f4d03f; /* Yellow color for marking */
+    color: #000; /* Black text */
+    font-weight: bold;
+    text-align: center;
+}
+
+#kukoMatrixTable_wrapper .dt-length {
+    display:none!important;
+}
+
+
+#kukoMatrixTable thead tr:first-child th {
+    padding:0!important;
+    padding-top:0.5rem!important;
+    padding-bottom:0.5rem!important;
+}
+
+#kukoMatrixTable tbody tr td {
+    padding-top: 0.7rem!important;
+    padding-bottom: 0.7rem!important;
+}
+
+#kukoMatrixDtoNotWorkMsg {
+    margin-bottom:0!important;
+    margin-top:0!important;
+    display:none;
+}
+
+.panelCountOfTypicalLabel {
+    border-radius:50% !important;
+    font-size:smaller!important;
+    left:90% !important;
+    font-weight: bold !important;
+    top: -1.2rem!important;
+}
+
+[data-tooltip]::after {
+    white-space: pre;
+}
+
+#kukoMatrixTable thead {
+    position: sticky;
+    top: 61px;
+    z-index: 998;
+    background-color: white;
+}

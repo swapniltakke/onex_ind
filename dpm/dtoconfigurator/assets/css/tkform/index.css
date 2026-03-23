@@ -1,0 +1,80 @@
+#btnCreateTkFormDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#tkFormTable .u-pointer {
+    cursor: pointer;
+    color: #00b5ad;
+    font-weight: bold;
+}
+
+#tkFormTable_wrapper .dt-search {
+    display:none;
+}
+
+#tkPageSidebar .item {
+    display: flex;
+    align-items: center;
+}
+
+#tkPageSidebar .item i.icon {
+    margin-right: 12px;
+}
+
+
+#tkFormTable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f3f3f0;
+    z-index: 10;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+#tkFormTable {
+    font-size: 13px;
+}
+
+#tkFormTable th {
+    padding: 10px 6px !important;
+    vertical-align: middle;
+}
+
+#tkFormTable td {
+    padding: 10px 6px !important;
+    vertical-align: middle;
+}
+
+
+#tkFormTable td:nth-child(1),
+#tkFormTable th:nth-child(1) {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#tkFormTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    #tkFormTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tkFormTable {
+        min-width: 1100px;
+    }
+}
+
+#tkFormTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+#tkFormTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

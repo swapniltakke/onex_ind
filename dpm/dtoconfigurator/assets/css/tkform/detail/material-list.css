@@ -1,0 +1,89 @@
+#materialListTable_wrapper .dt-length{
+    padding-top:15px;
+}
+
+#materialListContainer .ui.message {
+    font-weight:700;
+    margin:0!important;
+    margin-top:0.5rem!important;
+}
+
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+
+.dt-search label {
+    display:none;
+}
+
+.deletedMaterial {
+    background: #ff00001a;
+}
+
+.addedMaterial {
+    background: #23c1233d;
+}
+
+
+#materialListTable thead th {
+    background-color: aliceblue;
+}
+
+#materialListTable {
+    font-size: 13px;
+}
+
+#materialListTable th {
+    padding: 5px 6px !important;
+    vertical-align: middle;
+}
+
+#materialListTable td {
+    padding: 10px 6px !important;
+    vertical-align: middle;
+}
+
+
+#materialListTable td:nth-child(1),
+#materialListTable th:nth-child(1) {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#materialListTableContainer {
+    overflow-x: unset;
+}
+
+@media (max-width: 1200px) {
+    #materialListTableContainer {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #materialListTable {
+        min-width: 1100px;
+    }
+}
+
+#materialListTableContainer::-webkit-scrollbar {
+    height: 6px;
+}
+#materialListTableContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

@@ -1,0 +1,104 @@
+.row-add {
+    background-color: #d4edda !important;
+    color: #09230f !important;
+}
+
+.row-replace {
+    background-color: #d1ecf1 !important;
+    color: #071618 !important;
+}
+
+.row-delete {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+#allNachbaus {
+    width: 75%;
+    margin: 0 auto; /* Centers the select boxes */
+}
+
+#allNachbaus option {
+    text-align:center;
+}
+
+
+#currentNachbau {
+    width: 75%;
+    margin: 0 auto; /* Centers the select boxes */
+}
+
+#currentNachbau option {
+    text-align:center;
+}
+
+
+.transferToNachbauVal, .currentNachbauVal {
+    font-weight:700;
+}
+
+
+
+#transferSkippedModal {
+    height: 100vh !important;
+    top: 0 !important;
+    margin: 1em auto!important;
+}
+
+#transferSkippedModal .content {
+    max-height: none !important;
+    overflow: hidden !important;
+}
+
+#transferSkippedModal .ui.bottom.attached.segment {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-top: none;
+}
+
+/* DataTable scrolling */
+#transferSkippedModal .dataTables_wrapper {
+    height: 100%;
+}
+
+#transferSkippedModal .dataTables_scrollBody {
+    max-height: none !important;
+}
+
+#transferSkippedModal table thead {
+    text-align:center!important;
+}
+#transferSkippedModal .ui.table thead th {
+    text-align:center!important;
+}
+#transferSkippedModal table tbody {
+    text-align:center!important;
+}
+
+#transferSkippedModal .ui.tab {
+    max-height: 100%;
+}
+
+/* Common styles for list items */
+#nachbauDifferencesModal .ui.list .item {
+    text-align: center; /* Center-align content */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Styles for items in the "Not Exists" section */
+#dtosNotExistInTransferToNachbau .item {
+    background-color: rgba(255, 99, 71, 0.2); /* Light red background */
+    border: 1px solid rgba(255, 99, 71, 0.5); /* Red border */
+    color: #b22222; /* Darker red text */
+}
+
+/* Styles for items in the "New DTO Numbers" section */
+#newDtosInTransferToNachbau .item {
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */
+    border: 1px solid rgba(144, 238, 144, 0.5); /* Green border */
+    color: #228b22; /* Darker green text */
+}

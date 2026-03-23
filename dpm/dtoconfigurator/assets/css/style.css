@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    font-family: 'Open Sans', 'Helvetica Neue',Arial,Helvetica,sans-serif!important;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue',Arial,Helvetica,sans-serif!important;
+}
+
+.ui.button, .ui.message .header, .ui.header .sub.header, .ui.menu, .ui {
+    font-family: 'Open Sans','Helvetica Neue',Arial,Helvetica,sans-serif!important;
+}
+
+#imgSiemensLogo{
+    width: 67%;
+    margin: 0 auto;
+}
+
+#dtoHeaderDesc:before {
+    background:none!important;
+}
+
+#userInfoHeader {
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding:10px;
+}
+
+#userInfoHeader img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#userInfoHeader #userOrgCode {
+    font-size: smaller;
+    color: grey;
+    padding-top:4px;
+}
+
+.display-none {
+    display:none;
+}
+
+
+#projectsSubMenus .item {
+    display: flex;
+    align-items: center;
+}
+
+#projectsSubMenus .item i.icon {
+    margin-right: 8px;
+}
+
+#tkformSubMenus .item {
+    display: flex;
+    align-items: center;
+}
+
+#tkformSubMenus .item i.icon {
+    margin-right: 8px;
+}
+
+#indexPageSidebar .item {
+    display: flex;
+    align-items: center;
+}
+
+#indexPageSidebar .item i.icon {
+    margin-right: 12px;
+}
+
+#pageHeader .header.item a{
+    color:#000!important;
+    text-decoration:none!important;
+}
+
+/*#pageHeader {*/
+/*    position: sticky;*/
+/*    top: 0; !* Adjust as needed, e.g., top: 10px for some spacing *!*/
+/*    z-index: 1000; !* Ensures it stays above other content *!*/
+/*    margin-left: -35px;*/
+/*    height:49px!important;*/
+/*    background-color: #f3f3f0;*/
+/*    padding: 0;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); !* Optional: adds a shadow for visibility *!*/
+/*}*/
+
+#imageEnlargeModal {
+    width: 90% !important; /* Adjust the width */
+    height: 90% !important; /* Adjust the height */
+    top: 5% !important; /* Center vertically */
+    left: 5% !important; /* Center horizontally */
+}
+
+#imageEnlargeModal .content {
+    height: 100%; /* Ensure the content fills the modal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#enlargedImage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#goToTopButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    background-color: #2185d0; /* Optional: Button color */
+    color: white;
+}
+
+#goToTopButton:hover {
+    background-color: #1678c2;
+    transform: scale(1.1);
+}
+
+[data-tooltip]::after {
+    z-index: 1001 !important;
+}
+
+.dto-index-header {
+    font-size:24px!important;
+    margin-top:0.3rem!important;
+}
+
+.dto-index-message {
+    text-align:center;
+    background-color: #f3f3f0!important;
+    width:100%;
+    margin-bottom:2rem!important;
+}
+
+.dto-index-message p {
+    font-size:16px!important;
+}
+
+#dtoIndexPageContainer {
+    font-family:Siemens Sans, Siemens Sans, Arial, Helvetica, sans-serif!important;
+}

@@ -1,0 +1,33 @@
+#materialListTable_wrapper .dt-length{
+    display:none!important;
+}
+
+/* Datatable Search customization */
+.dt-search input[type="search"] {
+    padding: 10px 15px!important;
+    border: 1px solid #ddd!important;
+    border-radius: 20px!important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
+    transition: all 0.3s ease!important;
+}
+.dt-search input[type="search"]:focus {
+    outline: none!important;
+    border-color: #3b82f6!important; /* Light blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)!important;
+}
+.dt-search input[type="search"]::placeholder {
+    color: #999!important;
+}
+.dt-search label {
+    display:none;
+}
+
+#materialSearchListTable .u-pointer {
+    cursor: pointer;
+    color: #00b5ad;
+    font-weight: bold;
+}
+
+.line-height-15 {
+    line-height:1.5rem;
+}

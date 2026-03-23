@@ -1,0 +1,159 @@
+#panelCountLabel {
+    border-radius:50%;
+    font-size:smaller;
+    top:-50%;
+    left:98%;
+}
+
+#projectPageContainer .twelve.wide.column div {
+    cursor:default;
+}
+
+#projectInfoLabels .ui.label {
+    font-size:0.85rem!important;
+}
+
+#downloadProjectFolder a {
+    border-radius: 25%;
+    padding: 2px;
+    border: 1px dashed #4183C4;
+    margin-right:7px;
+}
+#downloadProjectFolder a:hover {
+    color:white;
+    background-color:#4183C4;
+}
+
+#downloadProjectFolder a i{
+    margin-left:3px;
+    margin-right:-0.3px;
+}
+
+#projectDataTabs {
+    padding-right:15px;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+#projectDataTabularMenu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    background-color: white; /* Ensures visibility over other elements */
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Adds a separator for clarity */
+}
+
+#projectDataTabularMenu .item {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+#projectDataTabularMenu .item.active {
+    border-radius: 20px 20px 0 0;
+}
+#projectDataTabularMenu .item:hover {
+    cursor:pointer;
+}
+
+#projectNcListCount {
+    margin-right: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 40%;
+    color: white;
+}
+
+.display-none {
+    display:none!important;
+}
+
+.deletedMaterial {
+	background: #ff00001a;
+}
+
+.addedMaterial {
+	background: #23c1233d;
+}
+
+
+/* Tablet ve küçük ekranlar için */
+@media only screen and (max-width: 1200px) {
+    #projectInfoLabels .ui.label {
+        font-size: 0.85em !important;
+        padding: 0.5em 0.7em !important;
+        max-width: 200px !important;
+    }
+
+    #projectInfoLabels .ui.label:first-child {
+        max-width: 280px !important;
+    }
+
+    #projectInfoLabels .ui.label i {
+        font-size: 0.9em !important;
+    }
+
+    #projectInfoLabels {
+        gap: 8px !important;
+    }
+}
+
+/* Mobil ve daha küçük ekranlar için */
+@media only screen and (max-width: 992px) {
+    #projectInfoLabels .ui.label {
+        font-size: 0.75em !important;
+        padding: 0.4em 0.6em !important;
+        max-width: 150px !important;
+    }
+
+    #projectInfoLabels .ui.label:first-child {
+        max-width: 200px !important;
+    }
+
+    #projectInfoLabels .ui.label i {
+        font-size: 0.85em !important;
+    }
+
+    #projectInfoLabels {
+        gap: 6px !important;
+    }
+}
+
+/* Çok küçük mobil ekranlar için */
+@media only screen and (max-width: 768px) {
+    #projectInfoLabels .ui.label {
+        font-size: 0.65em !important;
+        padding: 0.35em 0.5em !important;
+        max-width: 120px !important;
+    }
+
+    #projectInfoLabels .ui.label:first-child {
+        max-width: 150px !important;
+    }
+
+    #projectInfoLabels .ui.label i {
+        font-size: 0.8em !important;
+    }
+
+    #projectInfoLabels {
+        gap: 5px !important;
+        flex-wrap: wrap !important;
+    }
+
+    #projectInfoLabels .floating.ui.label {
+        font-size: 0.7em !important;
+    }
+}
+
+#projectInfoLabels .ui.blue.label,
+#projectInfoLabels .ui.green.label,
+#projectInfoLabels .ui.red.label,
+#projectInfoLabels .ui.brown.label {
+    max-width: 300px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}

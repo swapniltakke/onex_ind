@@ -1,0 +1,7 @@
+#ncListTable_wrapper .dt-paging {
+    display:none!important;
+}
+
+#ncListTable_wrapper .dt-length{
+    display:none!important;
+}
